@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Protocol Log</title>
+
+	<link rel="stylesheet" href="assets/styles/css/main.css">
+	<link rel="stylesheet" href="assets/styles/css/custom.css">
+</head>
+
+<header>
+	<nav class="navbar navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Protocol Log</a>
+			</div>
+
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+
+
+				<ul class="nav navbar-nav navbar-right admin">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><img src="assets/images/admin.png" alt="">Admin <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="#">Profile</a></li>
+							<li><a href="#">Settings</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Logout</a></li>
+
+						</ul>
+					</li>
+				</ul>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Workers</a></li>
+					<li><a href="#">Sectors</a></li>
+					<li><a href="#">Documents</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</header>
+
+<body>
+	<div class="page">
+		<div class="container">
+			<div class="inner">
+
+				<div class="row">
+
+				</div>
+
+				<div class="row">
+					<div class="col-md-5">
+						<div class="sidebar">
+							<div class="header clearfix">
+								<div class="col-md-9">
+									<h1>Sektori</h1>
+								</div>
+
+								<div class="col-md-3">
+									<button class="btn btn-primary" data-toggle="modal" data-target="#sektor">
+										<img src="assets/images/add.png" alt=""> Dodaj
+									</button>
+									<!-- Modal -->
+									<div id="sektor" class="modal fade" role="dialog">
+										<div class="modal-dialog">
+
+											<!-- Modal content-->
+											<div class="modal-content">
+												<div class="modal-header">
+													<button type="button" class="close" data-dismiss="modal">&times;</button>
+													<h4 class="modal-title">Novi sektor</h4>
+												</div>
+												<div class="modal-body">
+													<form class="form-horizontal">
+														<fieldset>
+															<div class="form-group">
+																<label for="naziv" class="col-lg-2 control-label">Naziv</label>
+																<div class="col-lg-10">
+																	<input type="text" class="form-control" id="naziv" placeholder="Naziv sektora">
+																</div>
+															</div>
+
+
+															<div class="form-group">
+																<label for="select" class="col-lg-2 control-label">Sektor</label>
+																<div class="col-lg-10">
+																	<select class="form-control" id="select">
+																		<option>Sektor 1</option>
+																		<option>Sektor 2</option>
+																		<option>Sektor 3</option>
+																		<option>Sektor 4</option>
+																		<option>Sektor 5</option>
+																	</select>
+																</div>
+															</div>
+
+
+															<div class="form-group">
+																<div class="col-lg-10 col-lg-offset-2">
+																	<button type="submit" class="btn btn-primary"><img src="assets/images/add.png" alt=""> Dodaj sektor</button>
+																</div>
+															</div>
+														</fieldset>
+													</form>
+												</div>
+
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<table class="table table-striped table-hover ">
+								<thead>
+									<tr>
+										<th>Naziv sektora</th>
+										<th>Firma</th>
+									</tr>
+								</thead>
+
+								<tbody>
+									<tr>
+										<td>Sektor 1 </td>
+										<td>Adeda Solutions </td>
+
+									</tr>
+
+									<tr>
+										<td>Sektor 2 </td>
+										<td>Adeda Solutions </td>
+
+									</tr>
+
+									<tr>
+										<td>Sektor 3 </td>
+										<td>Adeda Solutions </td>
+
+									</tr>
+
+									<tr>
+										<td>Sektor 4 </td>
+										<td>Adeda Solutions </td>
+
+									</tr>
+
+									<tr>
+										<td>Sektor 5 </td>
+										<td>Adeda Solutions </td>
+
+									</tr>
+
+									<tr>
+										<td>Sektor 6 </td>
+										<td>Adeda Solutions </td>
+
+									</tr>
+
+								</tbody>
+							</table>
+
+						</div>
+					</div>
+
+					<div class="col-md-7">
+						<div class="main">
+							<div class="header clearfix">
+								<div class="col-md-9">
+									<h1>Uposlenici</h1>
+								</div>
+
+								<div class="col-md-3">
+									<button class="btn btn-primary" data-toggle="modal" data-target="#uposlenici">
+										<img src="assets/images/add.png" alt=""> Dodaj
+									</button>
+
+									<!-- Modal -->
+									<div id="uposlenici" class="modal fade" role="dialog">
+										<div class="modal-dialog">
+											<div class="modal-content">
+												<div class="modal-header">
+													<button type="button" class="close" data-dismiss="modal">&times;</button>
+													<h4 class="modal-title">Novi uposlenik</h4>
+												</div>
+												<div class="modal-body">
+												<form class="form-horizontal">
+													<fieldset>
+														<div class="form-group">
+															<label for="naziv" class="col-lg-2 control-label">Ime</label>
+															<div class="col-lg-10">
+																<input type="text" class="form-control" id="ime-zaposlenika" placeholder="Ime i prezime">
+															</div>
+														</div>
+
+														<div class="form-group">
+															<label for="naziv" class="col-lg-2 control-label">Datum</label>
+															<div class="col-lg-10">
+																<input type="text" class="form-control" id="datum-zaposlenja" placeholder="Datum zaposlenja">
+															</div>
+														</div>
+
+
+														<div class="form-group">
+															<label for="select" class="col-lg-2 control-label">Firma</label>
+															<div class="col-lg-10">
+																<select class="form-control" id="firma">
+																	<option>Firma 1</option>
+																	<option>Firma 2</option>
+																	<option>Firma 3</option>
+																	<option>Firma 4</option>
+																	<option>Firma 5</option>
+																</select>
+															</div>
+														</div>
+
+														<div class="form-group">
+															<label for="select" class="col-lg-2 control-label">Sektor</label>
+															<div class="col-lg-10">
+																<select class="form-control" id="sektor">
+																	<option>Sektor 1</option>
+																	<option>Sektor 2</option>
+																	<option>Sektor 3</option>
+																	<option>Sektor 4</option>
+																	<option>Sektor 5</option>
+																</select>
+															</div>
+														</div>
+
+
+														<div class="form-group">
+															<div class="col-lg-10 col-lg-offset-2">
+																<button type="submit" class="btn btn-primary"><img src="assets/images/add.png" alt=""> Dodaj uposlenika</button>
+															</div>
+														</div>
+													</fieldset>
+												</form>
+											</div>
+											</div>
+										</div>
+
+
+								</div>
+							</div>
+
+							<table class="table table-striped table-hover ">
+								<thead>
+									<tr>
+										<th>#</th>
+										<th>Ime i prezime</th>
+										<th>Pozicija</th>
+										<th>Datum zaposlenja</th>
+									</tr>
+								</thead>
+
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>John Doe</td>
+										<td>Developer</td>
+										<td>25. 11. 2015</td>
+									</tr>
+
+									<tr>
+										<td>2</td>
+										<td>John Doe</td>
+										<td>Developer</td>
+										<td>25. 11. 2015</td>
+									</tr>
+
+									<tr>
+										<td>3</td>
+										<td>John Doe</td>
+										<td>Developer</td>
+										<td>25. 11. 2015</td>
+									</tr>
+
+									<tr>
+										<td>4</td>
+										<td>John Doe</td>
+										<td>Developer</td>
+										<td>25. 11. 2015</td>
+									</tr>
+
+									<tr>
+										<td>5</td>
+										<td>John Doe</td>
+										<td>Developer</td>
+										<td>25. 11. 2015</td>
+									</tr>
+
+									<tr>
+										<td>6</td>
+										<td>John Doe</td>
+										<td>Developer</td>
+										<td>25. 11. 2015</td>
+									</tr>
+
+									<tr>
+										<td>7</td>
+										<td>John Doe</td>
+										<td>Developer</td>
+										<td>25. 11. 2015</td>
+									</tr>
+
+									<tr>
+										<td>8</td>
+										<td>John Doe</td>
+										<td>Developer</td>
+										<td>25. 11. 2015</td>
+									</tr>
+
+									<tr>
+										<td>9</td>
+										<td>John Doe</td>
+										<td>Developer</td>
+										<td>25. 11. 2015</td>
+									</tr>
+
+									<tr>
+										<td>10</td>
+										<td>John Doe</td>
+										<td>Developer</td>
+										<td>25. 11. 2015</td>
+									</tr>
+
+									<tr>
+										<td>11</td>
+										<td>John Doe</td>
+										<td>Developer</td>
+										<td>25. 11. 2015</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+</body>
+</html>

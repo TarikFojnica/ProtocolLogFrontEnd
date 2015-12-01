@@ -92,12 +92,16 @@ header {
 
 		.header {
 			border-bottom: 1px solid rgba(0,0,0,.1);
+			h1 {
+				font-size: 2em;
+			}
+
+			button {
+				margin-top: 1em;
+				float: right;
+			}
 		}
 
-		h1 {
-
-			font-size: 2em;
-		}
 
 		.sidebar {
 			padding: .85em;
@@ -117,6 +121,10 @@ header {
 			h3 {
 				margin-top: 0;
 			}
+		}
+
+		.pagination-container {
+			text-align: center;
 		}
 	}
 }
