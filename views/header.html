@@ -1,19 +1,3 @@
-<!DOCTYPE html>
-<html lang="en" ng-app="APP" ng-cloak ng-controller="mainCtrl">
-<head>
-	<meta charset="UTF-8">
-	<title>Protocol Log</title>
-
-	<link rel="stylesheet" href="assets/styles/css/main.css">
-
-
-	<script src="assets/libs/angular.min.js"></script>
-	<script src="assets/libs/angular-route.min.js"></script>
-
-	<script src="controllers/mainCtrl.js"></script>
-
-</head>
-
 <header>
 	<nav class="navbar navbar-inverse">
 		<div class="container">
@@ -38,26 +22,16 @@
 							<li><a href="#">Settings</a></li>
 							<li class="divider"></li>
 							<li><a href="#">Logout</a></li>
-
 						</ul>
 					</li>
 				</ul>
 
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Workers</a></li>
-					<li><a href="#">Sectors</a></li>
-					<li><a href="#">Documents</a></li>
+					<li><a ui-sref="uposlenici">Uposlenici</a></li>
+					<li><a ui-sref="ulazni-dokumenti">Ulazni Dokumenti</a></li>
+					<li><a ui-sref="izlazni-dokumenti">Izlazni Dokumenti</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 </header>
-
-<body>
-	<div ng-view></div>
-
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/bootstrap.min.js"></script>
-</body>
-</html>
