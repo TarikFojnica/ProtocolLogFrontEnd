@@ -5881,6 +5881,10 @@ header nav.navbar {
   border-radius: 0;
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */ }
+  header nav.navbar ul {
+    text-transform: uppercase; }
+    header nav.navbar ul li.active a {
+      background-color: rgba(0, 0, 0, 0.4) !important; }
   header nav.navbar ul.admin {
     margin-left: 2em; }
     header nav.navbar ul.admin img {
